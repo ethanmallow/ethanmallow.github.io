@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Image Gallery</title>
+<style>
+body {
+    background: green;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: red;
+  font-family: "Comic Sans MS"
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Bach Strad.jpg">
+      <img src="Bach Strad.jpg" alt="Bach Strad" width="600" height="400">
+    </a>
+    <div class="desc">The trumpet is part of the Brass Family.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Flugelhorn.jpg">
+      <img src="Flugelhorn.jpg" alt="Flugelhorn" width="600" height="400">
+    </a>
+    <div class="desc">The Flugelhorn is a part of the Brass Family.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Piccolo Trumpet.jpg">
+      <img src="Piccolo Trumpet.jpg" alt="Piccolo Trumpet" width="600" height="400">
+    </a>
+    <div class="desc">The Piccolo Trumpet is part of the Brass Family.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Trombone.jpg">
+      <img src="Trombone.jpg" alt="Trombone" width="600" height="400">
+    </a>
+    <div class="desc">The Trombone is part of the Brass Family.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Euphonium.jpg">
+      <img src="Euphonium.jpg" alt="Euphonium" width="600" height="400">
+    </a>
+    <div class="desc">The Euphonium is part of the Brass Family.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Tuba.jpg">
+      <img src="Tuba.jpg" alt="Tuba" width="600" height="400">
+    </a>
+    <div class="desc">The Tuba is part of the Brass Family.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="French Horn.jpg">
+      <img src="French Horn.jpg" alt="French Horn" width="600" height="400">
+    </a>
+    <div class="desc">The French Horn is part of the Brass Family.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Cornet.jpg">
+      <img src="Cornet.jpg" alt="Cornet" width="600" height="400">
+    </a>
+    <div class="desc">The Cornet is part of the Brass Family.</div>
+  </div>
+</div>
+</body>
+</html>
