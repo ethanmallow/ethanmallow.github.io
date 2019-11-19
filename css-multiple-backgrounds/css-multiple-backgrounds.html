@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Multiple Backgrounds</title>
+<style>
+#one {
+    height: 700px;
+    width: 700px;
+    background-image: url('dealwithit.png'), url('Branden Ulm.jpg'), url('tileable.jpg');
+    background-size: 150px 150px, 300px 300px, auto;
+    background-position: 480px 440px, right bottom, left top;
+    background-repeat: no-repeat, no-repeat, repeat
+}
+#two {
+    height: 700px;
+    width: 700px;
+    background: url('dealwithit.png') 480px 440px/150px 150px no-repeat, url('Branden Ulm.jpg') right bottom/300px 300px no-repeat, url('tileable.jpg') left top/auto repeat;
+}
+html {
+    background: url('Keegan Kabelowsky.jpg') no-repeat center fixed;
+    background-size: cover
+}
+#hero-image {
+  background: url('me2.jpg') no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+#hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id="hero-image">
+    <div id="hero-text">
+    <h1>Ethan Mallow</h1>
+    </div>
+</div>
+<div id="one">
+</div>
+<div id="two">
+</div>
+</body>
+</html>
