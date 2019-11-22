@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Shadows</title>
+<style>
+#one {
+    text-shadow: 3px 3px;
+}
+#two {
+    text-shadow: 2px 2px 3px green
+}
+#three {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 20px yellow, 0 0 5px lime
+}
+#four {
+    text-shadow: 0 0 10px red, 0 0 20px blue
+}
+#five {
+    color: lime;
+    text-shadow: -1px 0 red, 0 1px red, 0 -1px red
+}
+#six {
+    height: 165px;
+    width: 400px;
+    border: 1px solid;
+    box-shadow: 5px 10px green;
+}
+#seven {
+    height: 165px;
+    width: 400px;
+    border: 1px solid;
+    box-shadow: 10px 10px 5px blue
+}
+#boxshadow {
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
+  background: lime;
+}
+#boxshadow img {
+  width: 100%;
+  border: 1px solid #8a4419;
+  border-style: inset;
+}
+#boxshadow::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);        
+  width: 70%; 
+  left: 15%;
+  height: 100px;
+  bottom: 0;
+}
+#nine {
+    width:50%;
+    box-shadow: 20px 20px 50px purple
+}
+p {
+    color: white
+}
+</style>
+<body>
+<h1 id="one">Shadow</h1>
+<h1 id="two">Shadow</h1>
+<h1 id="three">Shadow</h1>
+<h1 id="four">Shadow</h1>
+<h1 id="five">Shadow</h1>
+<div id="six">The Micro Focus Enterprise Security Products business is part of the software business of Micro Focus. HP Enterprise Security Products was built from acquired companies Fortify Software,[1] ArcSight,[2] and TippingPoint and Atalla (from the acquisition of 3Com[3]), which HP bought in 2010 and 2011. HPE has since sold TippingPoint and has announced the intention to divest the entire HP Enterprise Software business unit by spinning it out and merging it with Micro Focus. The merge concluded on September 1, 2017.
+</div>
+<p>This is only here so the boxes don't overlap.</p>
+<div id="seven">The Micro Focus Enterprise Security Products business is part of the software business of Micro Focus. HP Enterprise Security Products was built from acquired companies Fortify Software,[1] ArcSight,[2] and TippingPoint and Atalla (from the acquisition of 3Com[3]), which HP bought in 2010 and 2011. HPE has since sold TippingPoint and has announced the intention to divest the entire HP Enterprise Software business unit by spinning it out and merging it with Micro Focus. The merge concluded on September 1, 2017.
+</div>
+<p>a</p>
+<div id="boxshadow"><img src="Nick Krawczyk.jpg" width="100%" height="75">
+</div>
+<p>a</p>
+<div id="nine"><img src="Nick Krawczyk.jpg" width=100% height="175">
+</div>
+</body>
+</html>
